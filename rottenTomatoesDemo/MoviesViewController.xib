@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoviesViewController">
+            <connections>
+                <outlet property="networkErrorLabel" destination="Daf-Fr-ATk" id="TzZ-EW-njf"/>
+                <outlet property="tabBar" destination="OEI-av-CiT" id="ziK-RB-VQl"/>
+                <outlet property="tableView" destination="f75-kq-2pI" id="tU5-B8-CL6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="f75-kq-2pI">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Network Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Daf-Fr-ATk">
+                    <rect key="frame" x="0.0" y="63" width="320" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" red="0.99403700347661006" green="1" blue="0.99812418542352133" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="highlightedColor" red="0.92337559668195557" green="0.88969185105670978" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="shadowColor" red="1" green="0.96035548169999996" blue="0.96711489829999997" alpha="1" colorSpace="calibratedRGB"/>
+                </label>
+                <tabBar contentMode="scaleToFill" id="OEI-av-CiT">
+                    <rect key="frame" x="0.0" y="519" width="320" height="49"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <items>
+                        <tabBarItem title="Box Office" id="chH-tl-aym"/>
+                        <tabBarItem tag="1" title="In Theaters" id="jI1-xl-pwu"/>
+                    </items>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="DTe-sk-Ylm" appends="YES" id="PXp-xz-5k6"/>
+                    </connections>
+                </tabBar>
+            </subviews>
+            <color key="backgroundColor" red="0.6704438469443148" green="1" blue="0.88967023984268756" alpha="1" colorSpace="calibratedRGB"/>
+            <gestureRecognizers/>
+            <point key="canvasLocation" x="318" y="425"/>
+        </view>
+        <tapGestureRecognizer id="DTe-sk-Ylm">
+            <connections>
+                <action selector="onTap:" destination="-1" id="JTC-4t-lCp"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
